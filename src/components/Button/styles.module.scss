@@ -1,0 +1,42 @@
+.container {
+  border: none;
+  width: min-content;
+  background-color: transparent;
+  filter: drop-shadow(rgba(var(--yellow-400), 0.6) -1px -1px 2px)
+    drop-shadow(rgba(var(--purple-300), 0.6) 1px 1px 2px);
+  span {
+    padding: 10px 40px;
+    background: linear-gradient(
+      45deg,
+      rgb(var(--yellow-400)) 0%,
+      rgb(var(--green-300)) 35.94%,
+      rgb(var(--blue-300)) 68.23%,
+      rgb(var(--purple-300)) 100%
+    );
+    border: medium none;
+    clip-path: polygon(
+      12px 0px,
+      100% 0px,
+      100% 72%,
+      calc(100% - 12px) 100%,
+      0px 100%,
+      0px 12px
+    );
+    color: rgb(var(--dark-purple));
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
