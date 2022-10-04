@@ -15,18 +15,19 @@
   --green-300: 151, 209, 157;
   --blue-300: 80, 196, 255;
   --dark-purple: 14, 3, 24;
+  --custom-background-color: 80, 196, 255;
 
   --text-title: 6rem;
   --text-subtitle: 3rem;
   --text-xl: 1rem;
   --text-3xl: 1.875rem;
-  --box-shadow: rgba(255, 215, 77, 0.6) -1px -1px 6px,
+  --box-shadow: rgba(255, 215, 77, 0.6) 0 0 6px,
     rgba(124, 127, 255, 0.6) 1px 1px 6px;
   --box-shadow-anim: 0px 0px 30px 1px rgba(var(--brown-700), 0.75);
   --text-shadow: rgba(255, 215, 77, 0.4) 0 0 6px,
     rgba(124, 127, 255, 0.6) 1px 1px 6px;
   --text-shadow-anim: rgba(255, 215, 77, 0.4) 0 0 20px,
-    rgba(124, 127, 255, 0.6) 1px 1px 6px;
+    rgba(124, 127, 255, 0.6) 0 0 6px;
   --width: 1024px;
 }
 
@@ -102,4 +103,5 @@ h2 {
 
 p {
   text-transform: none;
+  word-break: break-all;
 }

@@ -1,0 +1,25 @@
+{
+  "profile": {
+    "name": "",
+    "pictureUrl": "",
+    "bio": "",
+    "customBackgroundColor": ""
+  },
+  "contacts": [
+    {
+      "name": "",
+      "url": "",
+      "icon": ""
+    }
+  ],
+  "repositories": [
+    {
+      "id": "",
+      "name": "",
+      "description": "",
+      "url": "",
+      "logoUrl": "",
+      "topics": []
+    }
+  ]
+}
