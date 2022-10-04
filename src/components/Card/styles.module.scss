@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+  padding: 30px 0;
+  border-top: 1px solid rgba(var(--white), 0.2);
+  &:first-child {
+    border: none;
+  }
+}
+
+.content {
+  width: var(--width);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h2 {
+      font-size: var(--text-3xl);
+      text-shadow: var(--text-shadow);
+    }
+    p {
+      margin-top: -15px;
+      text-transform: uppercase;
+      max-width: 1024px;
+      font-size: var(--text-xl);
+      line-height: 1.75rem;
+    }
+    div {
+      margin-bottom: 10px;
+    }
+    svg {
+      animation: none;
+    }
+  }
+}
+
+.image {
+  img {
+    width: 104px;
+    height: 104px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+
+.description {
+  details {
+    summary {
+      text-transform: uppercase;
+      list-style-type: none;
+      margin-left: var(--margin);
+      &::before {
+        position: absolute;
+        content: '[+]';
+        transform: rotate(0);
+        transition: all 0.2s ease;
+        margin-left: -45px;
+        display: var(--hide);
+      }
+      &::after {
+        content: '...';
+        display: var(--hide);
+      }
+    }
+    p {
+      margin-top: -5px;
+      margin-left: 40px;
+    }
+    &[open] {
+      summary {
+        &::before {
+          content: '[-]';
+          transform: rotate(-180deg);
+          transition: all 0.2s linear;
+          text-shadow: var(--text-shadow);
+          color: rgb(var(--blue-300));
+        }
+        &::after {
+          content: none;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      summary {
+        &::before {
+          text-shadow: var(--text-shadow);
+          animation: spin 0.2s linear;
+        }
+      }
+    }
+  }
+}
+
+.show {
+  --hide: inline;
+  --margin: 40px;
+}
+
+.hide {
+  --hide: none;
+  --margin: 0;
+}
+
+@keyframes spin {
+  0% {
+    letter-spacing: 1px;
+    transform: rotate(0deg);
+  }
+  50% {
+    letter-spacing: 4px;
+    text-indent: 4px;
+  }
+  100% {
+    letter-spacing: 1px;
+    transform: rotate(-180deg);
+  }
+}

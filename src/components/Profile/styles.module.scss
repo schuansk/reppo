@@ -1,0 +1,67 @@
+.header {
+  width: var(--width);
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgb(var(--purple-900));
+  background: radial-gradient(
+    ellipse at center,
+    rgba(var(--blue-300), 0.1) 0%,
+    rgba(var(--purple-900), 0.1) 70%
+  );
+  margin-bottom: 20px;
+  picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    transform: rotate(8deg);
+    transition: all 0.2s;
+    animation: flicker 1.5s infinite alternate;
+    &:hover {
+      transform: rotate(0deg);
+      animation: none;
+    }
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      transition: inherit;
+      filter: hue-rotate(90deg);
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+  h1 {
+    margin-top: 10px;
+    font-size: var(--text-subtitle);
+    align-self: flex-start;
+    text-shadow: var(--text-shadow);
+  }
+  p {
+    width: var(--width);
+    margin: 20px 0;
+    align-self: flex-start;
+    text-transform: initial;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    box-shadow: var(--box-shadow-anim);
+  }
+
+  20%,
+  24%,
+  55% {
+    box-shadow: none;
+  }
+}

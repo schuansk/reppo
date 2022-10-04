@@ -1,9 +1,36 @@
 {
   "profile": {
     "name": "Schuansk Torres",
-    "pictureUrl": "",
-    "bio": ""
+    "pictureUrl": "https://avatars.githubusercontent.com/u/11741138?v=4",
+    "bio": "I'm a developer."
   },
-  "contacts": [],
-  "repositories": []
+  "contacts": [
+    {
+      "name": "Github",
+      "url": "https://github.com/schuansk",
+      "icon": "AiOutlineGithub"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/schuansk/",
+      "icon": "AiOutlineInstagram"
+    }
+  ],
+  "repositories": [
+    {
+      "id": "1",
+      "name": "udoc",
+      "description": "At one point, I was tired of taking notes in notepad and at the same time wanted to learn a little about NextJS, so UDOC came along. This is a simple project that aims to help you create documentation for projects. In UDOC it is possible to create Macros (projects) and add pages to it, the documentation.",
+      "url": "https://github.com/schuansk/udoc",
+      "logoUrl": "https://raw.githubusercontent.com/schuansk/bucket/main/udoc/assets/logo.png",
+      "tags": [
+        "NextJS",
+        "Prisma",
+        "PostgreSQL",
+        "Typescript",
+        "Firebase",
+        "Sass"
+      ]
+    }
+  ]
 }
