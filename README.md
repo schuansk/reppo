@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <img alt="Reppo" src="https://github.com/schuansk/bucket/blob/main/reppo/assets/logo.png?raw=true" width="100" />
+</p>
+<h1 align="center">
+  Reppo
+</h1>
+<p align="center">
+  <a href="#why">Why</a> •
+  <a href="#technologies-used">Technologies used</a> •
+  <a href="#how-to-use">How to use</a> •
+  <a href="#how-to-contribute">How to contribute</a> •
+  <a href="#license">License</a>
+</p>
 
-## Getting Started
+<p align="center">Display your main projects in a simple manner.</p>
 
-First, run the development server:
+## Why
+
+<p>This is a project to list its main projects. He was inspired by the Hacktoberfest 2022.</p>
+
+## Technologies used
+
+- [NextJS](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
+
+## How to use
 
 ```bash
-npm run dev
-# or
-yarn dev
+  # Clone the repository
+  $ git clone git@github.com:schuansk/reppo.git
+
+  # Access the project directory
+  $ cd reppo
+
+  # Run with yarn
+  $ yarn dev
+  # Or npm
+  $ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to contribute
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+ 1. Use [this JSON file](https://raw.githubusercontent.com/schuansk/reppo/main/src/utils/firstname-lastname.json)  as an example to make your page.
+ 2. Some tips:
+    - In **customBackgroundColor**, use an RGB value, e.g., `"customBackgroundColor": "255, 255, 255"`
+    - Contact icons use **Ant Design Icons**, you can consult them [here](https://react-icons.github.io/react-icons/icons?name=ai) to use, just add the name in the **icon**, e.g., `"icon": "AiOutlineGithub"`
+ 3. When you finish editing your json file, move it to `/src/lib/db/`.
+    - Remember to rename it with your firstname-lastname.json.
+ 4. Submit your PR and wait for approval (or not 🙃).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## License
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p>Licensed under <a href="./LICENSE">MIT</a>.</p>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">Made lovingly by Schuansk Torres ❤️.</p>
