@@ -24,7 +24,7 @@ export default function Home({ contributors }: Props) {
       </Head>
       <div className={styles.container}>
         <header className={styles.title}>
-          <div className={styles.logo}>
+          <div>
             <Logo />
           </div>
           <span>

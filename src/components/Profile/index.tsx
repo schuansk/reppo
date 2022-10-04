@@ -4,6 +4,7 @@ export type ProfileProps = {
   name: string;
   pictureUrl: string;
   bio: string;
+  customBackgroundColor?: string;
 };
 
 type Props = {
@@ -12,7 +13,16 @@ type Props = {
 
 export function Profile({ data }: Props) {
   return (
-    <section className={styles.header}>
+    <section
+      className={styles.header}
+      style={
+        data.customBackgroundColor
+          ? ({
+              '--custom-background-color': data.customBackgroundColor,
+            } as React.CSSProperties)
+          : {}
+      }
+    >
       <picture>
         <img src={data.pictureUrl} alt={data.name} />
       </picture>

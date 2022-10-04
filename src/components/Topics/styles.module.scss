@@ -1,0 +1,18 @@
+.container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.topic {
+  font-size: 10px;
+  padding: 5px;
+  background-color: rgb(var(--blue-300));
+  color: rgb(var(--dark-purple));
+  border-radius: 2px;
+  margin-right: 10px;
+  box-shadow: rgba(var(--blue-300), 0.6) 0 0 6px;
+  text-transform: uppercase;
+  &:last-child {
+    margin: none;
+  }
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '../Button';
 import { DefaultCardImage } from '../DefaultCardImage';
+import { Topic, Topics } from '../Topics';
 import styles from './styles.module.scss';
 
 type Description = {
@@ -14,7 +15,7 @@ export type RepositoryProps = {
   description: string;
   url: string;
   logoUrl?: string;
-  tags: string[];
+  topics: Topic[];
 };
 
 type Props = {
@@ -53,9 +54,9 @@ export function Card({ data }: Props) {
         ) : (
           <DefaultCardImage />
         )}
-
         <div>
           <h2>{data.name}</h2>
+          {data.topics.length > 0 && <Topics topics={data.topics} />}
           <div className={styles.description}>
             <details
               onClick={(e) => !description?.rest && e.preventDefault()}
