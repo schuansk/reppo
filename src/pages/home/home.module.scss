@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: var(--width);
+  height: 40vh;
+  background: rgb(var(--purple-900));
+  background: radial-gradient(
+    ellipse at center,
+    rgba(var(--brown-800), 0.5) 0%,
+    rgba(var(--purple-900), 0.1) 70%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    margin-top: -20px;
+  }
+  span {
+    font: 700 1rem 'JetBrains Mono', serif;
+    font-size: calc(var(--text-title) * 1.4);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-shadow: rgba(255, 215, 77, 0.6) -1px -1px 20px;
+    div {
+      position: relative;
+      animation: flicker 1.9s infinite alternate;
+      margin-top: 20px;
+      transform: rotate(8deg);
+    }
+  }
+}
+
+.content {
+  width: var(--width);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  h1 {
+    font-size: 96px;
+    color: rgb(var(--white));
+    text-shadow: var(--text-shadow);
+  }
+}
+
+.contributors {
+  width: 100%;
+  ul {
+    margin-top: 2rem;
+    li {
+      width: fit-content;
+      margin: 10px 0;
+      list-style: none;
+      color: rgb(var(--white));
+      text-shadow: var(--text-shadow);
+      &::before {
+        content: '>>';
+        margin-right: 5px;
+        transition: all 0.2s;
+      }
+      &:hover {
+        &::before {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: var(--text-shadow-anim);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
