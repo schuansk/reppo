@@ -33,10 +33,11 @@
   # Access the project directory
   $ cd reppo
 
-  # Run with yarn
+  # Install all packages
+  $ yarn
+
+  # And run
   $ yarn dev
-  # Or npm
-  $ npm run dev
 ```
 
 ## How to contribute
