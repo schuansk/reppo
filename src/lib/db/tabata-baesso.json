@@ -7,9 +7,14 @@
   },
   "contacts": [
     {
-      "name": "",
-      "url": "",
-      "icon": ""
+      "name": "Github",
+      "url": "https://github.com/tabaesso",
+      "icon": "AiOutlineGithub"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tabatabaesso/",
+      "icon": "AiOutlineLinkedin"
     }
   ],
   "repositories": [
