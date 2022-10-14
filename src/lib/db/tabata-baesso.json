@@ -14,13 +14,41 @@
   ],
   "repositories": [
     {
-      "id": "",
-      "name": "",
-      "description": "",
-      "url": "",
-      "logoUrl": "",
+      "id": "1",
+      "name": "NodeJS and Paypal",
+      "description": "I was learning about NodeJS and payment integration, so I tried to integrate with paypal API and it worked!",
+      "url": "https://github.com/tabaesso/nodejs-paypal",
+      "logoUrl": "https://cdn-icons-png.flaticon.com/512/174/174861.png",
       "topics": [
-
+        "NodeJS",
+        "EJS",
+        "Javascript",
+        "Paypal-rest-api"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Drag and Drop",
+      "description": "This was the result of the first study of how to use drag and drop in React.",
+      "url": "https://github.com/tabaesso/drag-and-drop",
+      "logoUrl": "https://flaticons.net/icon.php?slug_category=user-interface&slug_icon=drag-and-drop",
+      "topics": [
+        "ReactJS",
+        "React-dnd",
+        "Javascript",
+        "CSS"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "NextJS Blog",
+      "description": "I was studying NextJS, so this project came up. My intention is to turn this project into a real personal blog to give some tips and teach some content about development.",
+      "url": "https://github.com/tabaesso/nextjs-blog",
+      "logoUrl": "https://seeklogo.com/images/N/naver-blog-logo-B1AC84614D-seeklogo.com.png",
+      "topics": [
+        "NextJS",
+        "Typescript",
+        "Styled-Components"
       ]
     }
   ]
