@@ -6,11 +6,16 @@
       "customBackgroundColor": ""
     },
     "contacts": [
-      {
-        "name": "",
-        "url": "",
-        "icon": ""
-      }
+        {
+            "name": "Github",
+            "url": "https://github.com/yu-gui-oh",
+            "icon": "AiOutlineGithub"
+          },
+          {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/guilherme-h-santos/",
+            "icon": "AiFillLinkedin"
+          }
     ],
     "repositories": [
       {
