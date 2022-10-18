@@ -19,12 +19,39 @@
     ],
     "repositories": [
       {
-        "id": "",
-        "name": "",
-        "description": "",
-        "url": "",
-        "logoUrl": "",
-        "topics": []
+        "id": "1",
+        "name": "Internship system for public transportation - Front-end",
+        "description": "This is the front-end part of the system I was developing during my internship. It is still incomplete, but learned a lot while studying for it.",
+        "url": "https://github.com/yu-gui-oh/internship-system-front",
+        "logoUrl": "https://cdn-icons-png.flaticon.com/128/6010/6010589.png",
+        "topics": [
+            "ReactJS",
+            "Typescript",
+            "CSS"
+          ]
+      },
+      {
+        "id": "2",
+        "name": "Internship system for public transportation - Back-end",
+        "description": "This is the back-end part of the system I was developing during my internship. It is still incomplete, but learned a lot while studying for it.",
+        "url": "https://github.com/yu-gui-oh/internship-system-server",
+        "logoUrl": "https://cdn-icons-png.flaticon.com/128/2704/2704265.png",
+        "topics": [
+            "NodeJS",
+            "Typescript"
+          ]
+      },
+      {
+        "id": "3",
+        "name": "Ignite Lab - Jun 2022",
+        "description": "I still have a lot to learn, so I took part at Rocketseat's 'Ignite Lab', to improve my programming skills :D",
+        "url": "https://github.com/yu-gui-oh/ignite-lab-react",
+        "logoUrl": "https://cdn-icons-png.flaticon.com/128/3049/3049618.png",
+        "topics": [
+            "ReactJS",
+            "Typescript",
+            "Tailwind CSS"
+          ]
       }
     ]
   }
