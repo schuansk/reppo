@@ -15,6 +15,11 @@
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/guilherme-h-santos/",
             "icon": "AiFillLinkedin"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/yugui0h/",
+            "icon": "AiOutlineInstagram"
           }
     ],
     "repositories": [
